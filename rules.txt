@@ -1,0 +1,8 @@
+'@'	Player
+'+'	Player on storage
+'$'	Box
+'*'	Box on storage
+'.'	Storage
+'#'	Wall
+'_' emptyspace
+

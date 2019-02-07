@@ -1,0 +1,166 @@
+*{
+    background-color:rgb(94, 94, 94);
+}
+
+body{
+    margin: 0;
+}
+
+div br {
+    display: none;
+}
+
+.container{
+    width: 100%;
+    padding-top: 10px;
+}
+
+.btn{
+	color: #D3D7CF;
+	border-style: solid;
+    border-color: darkgray;
+    font-size: 16px;
+}
+
+.title{
+    color: rgb(226, 223, 223);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 18pt;
+    background-color: #373737;
+}
+
+#contentContainer{
+    margin: 0;
+    width: 100%;
+    background-color: rgb(94, 94, 94);
+}
+
+#titleContainer{
+    height: 45px;
+    margin-top: -10px;
+    background-color: #373737;
+    
+}
+
+#sokobanTitle{
+    margin-top: 6px;
+    margin-left: 5px;
+    float: left;
+    margin-bottom: 0;
+}
+
+#sokobanIcon{
+    float: left;
+    margin-top: 5px;
+    margin-left: 5px;
+    margin-bottom: 0px;
+}
+
+#movesTitle{
+	float: right;
+	font-size:10pt;
+}
+
+#moves{
+	float: right;
+	font-size:10pt;
+}
+
+
+#nav{
+	width: 200px;
+	height: 100%;
+	float: left;
+	background-color: #464646;	
+	
+}
+
+#levelSelectContainer{
+    height: 100%;
+    padding: 2px 6px 0px 6px;
+    display: block-inline;
+    background-color: #464646;
+}
+
+#titleLevel{
+    float: left;
+    font-size: 14pt;
+    background-color: transparent;
+    margin: 6px 6px 0 15px;
+}
+
+#levelID{
+    float: left;
+    background-color: transparent;
+    margin-left: 5px;
+    margin-top: 3px;
+    color: #D3D7CF;
+}
+
+#levelPreview{
+    font-family: monospace;
+    font-weight: 100;
+    float: left;
+    margin-top: 50px;
+    margin-left: 0px;
+    margin-right: 0;
+    margin-bottom: 50px;
+    color:  #d68282;
+    background-color: #464646;
+}
+
+#canvas{
+	float: left;
+	margin-left: 200px;
+	margin-bottom:30px;
+    padding-top: 20px;
+    text-align: center;
+    align-content: center;
+    background-color: #5E5E5E
+}
+
+#tableBoard{
+    margin-bottom: auto;
+    border-collapse: collapse;
+    line-height: 0;
+    background-color: #5E5E5E;
+}
+
+td,tr{
+    margin: 0;
+    padding: 0;
+    border: none;
+}
+
+.resources{
+    display: inline-block;
+}
+
+#btnLoad{
+    float: left;
+    margin-top: 2px;
+    margin-left: 5px;
+    color: #D3D7CF;
+    background-color: #5E5E5E;
+}
+
+#timer, moves, timeIco{
+	float: right;
+    color: #D3D7CF;
+    margin-left:40px;
+    margin-bottom: 0;
+    margin-right: 20px;
+    margin-top: 10px;
+    background-color: #373737;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+#solved{
+	float: left;
+    color: #d68282;
+    margin-left:50%;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+
+
