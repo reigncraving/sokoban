@@ -32,9 +32,10 @@ var isUp = false;
 var isDown = false;
 var isSolved = false;
 
+var seconds = 0;
+
 //timer
 window.onload = function (){
-	var seconds = 0;
 	var func = setInterval(function(){
 		seconds++;
 		document.getElementById("timer").innerHTML = seconds;
@@ -194,7 +195,10 @@ function move(){
     	checkSolution();
     	printBoard();
     	if(isSolved){
-    		document.getElementById("solved").innerHTML = "Level solved!";
+    		var time = seconds;
+    		document.getElementById("solved").innerHTML = "Level solved!\n Moves:"+moves+" Time: "+time;
+
+    		document.getElementById("time").innerHTML = time;
     	}
     }
 }
@@ -244,10 +248,10 @@ for(var i = 0; i < h; i++){
             output += "<td witdh='35' height='35'><img class='resources' id='wall' src='textures/wall40x40.png' width='35' height='35' alt='#'>";
         }
         else if(sokoBoard[i][j] === "hero"){
-            output += "<td witdh='35' height='35'><img class='resources' id='hero' src='textures/hero40x40.png' width='35' height='35' alt='@'>";
+            output += "<td witdh='35' height='35'><img class='resources' id='hero' src='textures/hero.png' width='35' height='35' alt='@'>";
         }
         else if(sokoBoard[i][j] === "box"){
-            output += "<td witdh='35' height='35'><img class='resources' id='box' src='textures/box40x40.png' width='35' height='35' alt='$'>";
+            output += "<td witdh='35' height='35'><img class='resources' id='box' src='textures/box.png' width='35' height='35' alt='$'>";
         }
         else if(sokoBoard[i][j] === "goal"){
             output += "<td><img class='resources' id='goal' src='textures/goal40x40.png' width='35' height='35' alt='.'>";

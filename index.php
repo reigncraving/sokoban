@@ -17,10 +17,11 @@
             <div id="titleContainer">
                 <img id="sokobanIcon" src="textures/box.png" alt="box" height="32px" width="32px">
                 <h1 class="title" id="sokobanTitle">Sokoban</h1>
-                <img src = "textures/time.png" width = "30" height = "30">
                 <p id ="timer"></p>
+                <p class="title" id="timeTitle">Time:</p>
                 <br>
                 <p id ="moves" class="title">0</p>
+                <p class = "title" id="movesTitle">Moves:</p>
             </div>
             <br>
             <nav id="nav">
@@ -37,10 +38,10 @@
                        	 	<option value="5">Level 5</option>
                     	</select>
                 			<input type="submit" id="btnLoad" class = "btn" value="load">
+                            <input type="button" class ="btn" id="btnReset" value ="restart" onclick="window.location.reload()">
                 		<div>
                     		<pre id="levelPreview"><?php lvlReader("levels/lvl".$_GET['levelID'].".txt");?></pre>
                 		</div>
-                			<input type="button" class ="btn" id="btnReset" value ="restart" onclick="window.location.reload()">
             		</div>
             	</form>
             </nav>

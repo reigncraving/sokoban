@@ -1,5 +1,5 @@
 *{
-    background-color:rgb(94, 94, 94);
+    background-color: #575757;
 }
 
 body{
@@ -16,10 +16,13 @@ div br {
 }
 
 .btn{
-	color: #D3D7CF;
-	border-style: solid;
-    border-color: darkgray;
+	border-style: none;
     font-size: 16px;
+    background-color: #8b8888;
+}
+
+.btn:hover{
+    background-color: #a1a1a1;
 }
 
 .title{
@@ -32,7 +35,7 @@ div br {
 #contentContainer{
     margin: 0;
     width: 100%;
-    background-color: rgb(94, 94, 94);
+    background-color: #7d7d7d;
 }
 
 #titleContainer{
@@ -56,7 +59,7 @@ div br {
     margin-bottom: 0px;
 }
 
-#movesTitle{
+#movesTitle, #timeTitle{
 	float: right;
 	font-size:10pt;
 }
@@ -105,7 +108,7 @@ div br {
     margin-left: 0px;
     margin-right: 0;
     margin-bottom: 50px;
-    color:  #d68282;
+    color:  #ffd486;
     background-color: #464646;
 }
 
@@ -116,14 +119,14 @@ div br {
     padding-top: 20px;
     text-align: center;
     align-content: center;
-    background-color: #5E5E5E
+    background-color: #575757;
 }
 
 #tableBoard{
     margin-bottom: auto;
     border-collapse: collapse;
     line-height: 0;
-    background-color: #5E5E5E;
+    background-color: #575757;
 }
 
 td,tr{
@@ -136,29 +139,30 @@ td,tr{
     display: inline-block;
 }
 
-#btnLoad{
+#btnLoad, #btnReset{
     float: left;
     margin-top: 2px;
     margin-left: 5px;
-    color: #D3D7CF;
-    background-color: #5E5E5E;
+    color: #ffd486;
 }
 
-#timer, moves, timeIco{
+#timer, #moves{
 	float: right;
-    color: #D3D7CF;
-    margin-left:40px;
+    color: #ffd486;
+    font-size: 14px;
+    margin-left:20px;
     margin-bottom: 0;
     margin-right: 20px;
-    margin-top: 10px;
+    margin-top: 14px;
     background-color: #373737;
     font-family: 'Courier New', Courier, monospace;
 }
 
 #solved{
-	float: left;
-    color: #d68282;
-    margin-left:50%;
+	float: right;
+    color: #ffd486;
+    margin-right:40%;
+    margin-top:10%;
     font-family: 'Courier New', Courier, monospace;
 }
 
