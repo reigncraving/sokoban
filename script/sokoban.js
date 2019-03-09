@@ -1,10 +1,3 @@
-onload = function(){
-	document.getElementById("levelID").selectedIndex = "3";
-}
-
-
-
-
 //load level
 var level = document.getElementById('levelPreview').innerHTML.split("<br>");
 var levelLength = level.length;
