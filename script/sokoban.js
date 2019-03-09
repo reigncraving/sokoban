@@ -1,3 +1,10 @@
+onload = function(){
+	document.getElementById("levelID").selectedIndex = "3";
+}
+
+
+
+
 //load level
 var level = document.getElementById('levelPreview').innerHTML.split("<br>");
 var levelLength = level.length;
@@ -34,8 +41,9 @@ var isSolved = false;
 
 var seconds = 0;
 
-//timer
+
 window.onload = function (){
+	//timer
 	var func = setInterval(function(){
 		seconds++;
 		document.getElementById("timer").innerHTML = seconds;
